@@ -49,3 +49,7 @@ inputs = tokenizer(txt, return_tensors="pt").to(model.device)
 out = model.generate(**inputs, max_new_tokens=150, temperature=0.8)
 print(tokenizer.decode(out[0], skip_special_tokens=True))
 ```
+
+### Gradio UI:
+
+![alt text](image.png)
